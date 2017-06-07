@@ -55,7 +55,17 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-@media(max-width:767px) {
+a.email-address {
+    color: #FFFFFF;
+    font-size: 3em;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+a.email-address:hover {
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) { 
     .intro-message {
         padding-bottom: 15%;
     }
@@ -77,17 +87,40 @@ h6 {
     .intro-divider {
         width: 100%;
     }
+
+    a.email-address {
+        font-size: 1em;
+    }
 }
 
-a.email-address {
-    color: #FFFFFF;
-    font-size: 3em;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+@media screen and (max-width: 400px) { 
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+
+    a.email-address {
+        font-size: 1em;
+    }
 }
 
-a.email-address:hover {
-    color: #FFFFFF;
-}
 
 .cb-slideshow,
 .cb-slideshow:after { 
